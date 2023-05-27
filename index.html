@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restuarant Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />    
+      <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- =========== Navbar start ============ -->    
+    <section id="navbar">
+    <header class="header">    
+      <a href="#" class="logo"> <span>Pizza</span>HUB </a>      
+           
+      <nav class="navbar">
+          <a href="#home">home</a>
+          <a href="#menu">menu</a>
+          <a href="#about">About us</a>
+          <a href="#clients">Clients</a>          
+          <a href="#footer">Cantact us</a>                        
+      </nav>                      
+      <div class="shopping">        
+        <div class="carty"><i class="ri-shopping-bag-line"></i></div>                      
+        <span class="quantity"style="color:white">0</span>
+        <div class="image-container">
+          <input type="file" id="image-input" accept="image/*">
+          <label for="image-input" id="change-image-btn">
+            <img id="profile-image" src="./images/burger.png" alt="Profile Image">
+          </label>
+        </div>
+        
+      </div>                
+      <div id="menu-btn" class="fas fa-bars"></div>                
+  </header>  
+</section>
+
+<!-- ========= cart items ========= -->
+  <div class="cart ">
+
+    <div class="cart-title">Cart items</div>    
+
+    <div class="cart-content">  
+
+      <div class="cart-box">      
+        <i class="fa fa-trash trash" aria-hidden="true"></i>
+        <div class="cart-item">
+          
+          <div class="dish-img">
+            <img src="./images/recipe-01.jpg" alt="" />
+          </div>
+          <div class="dish-content">
+            <h3>Margherita Pizza </h3>            
+            <div class="dish-content-bottom">
+              <p>$19.99</p>    
+              <div class="increse">
+                <button class="decrese-btn">-</button>         
+                <div class="count">1</div>
+                <button class="increase-btn">+</button>         
+              </div> 
+            </div>
+          </div>
+        </div>  
+      </div>                
+
+      <div class="cart-box">      
+        <i class="fa fa-trash trash" aria-hidden="true"></i>
+        <div class="cart-item">
+          
+          <div class="dish-img">
+            <img src="./images/recipe-01.jpg" alt="" />
+          </div>
+          <div class="dish-content">
+            <h3>Margherita Pizza </h3>            
+            <div class="dish-content-bottom">
+              <p>$19.99</p>    
+              <div class="increse">
+              <button>-</button>         
+              <div class="count">1</div>
+              <button>+</button>         
+            </div> 
+            </div>
+          </div>
+        </div>  
+      </div>                
+
+    </div>
+
+    <div class="cartitem-bottom">
+    <span class="totaltext">Total AMount<b class="total">0</b></span>
+      <button class="placeorder">Place Order</button>
+      <i class="fa fa-times cart-remove" aria-hidden="true"></i>
+    </div>
+  
+</div>
+<!-- ===== cart items end ====== -->
+<!-- =========== Navbar end ============ -->
+
+
+<!-- =========== main start ============ -->
+    <main>
+      <!-- Banner start -->      
+      <div class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide" style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(./images/main1.webp) no-repeat;">
+                <div class="content">
+                  <span>Tasty And Delicious</span>
+                  <h3>Today Special</h3>
+                  <h1 class="home-h1">PIZZA</h1>
+                    <a href="#" class="btn-home">get started</a>
+                </div>
+            </div>
+    
+                <div class="swiper-slide slide" style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(./images/home2.jpg) no-repeat;">
+                    <div class="content">
+                      <span>Tasty And Delicious</span>
+                      <h3>Today Special</h3>
+                      <h1 class="home-h1">PIZZA</h1>
+                        <a href="#" class="btn-home">get started</a>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide slide" style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(./images/pizza3.jpg) no-repeat;">
+                    <div class="content">
+                      <span>Tasty And Delicious</span>
+                      <h3>Today Special</h3>
+                      <h1 class="home-h1">PIZZA</h1>
+                        <a href="#" class="btn-home">get started</a>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- banner end -->
+
+      <!-- popular dishes section start -->
+      <section class="section" id="menu">
+        <div class="container">
+          <div class="dishes__section-top">
+            <h1 class="heading"> <span>Popular dishes</span> </h1>
+          </div>
+
+          <div class="dishes__wrapper">
+<!-- first item======================== -->
+<div class="dish-item">  
+  <img class="item-image"src="./images/recipe-01.jpg" alt="" />
+  <i class="ri-shopping-cart-line add_cart"></i>       
+  <div class="dish-content">
+    <h3 class="item-title">Margherita Pizza</h3>
+    <div class="ratings">
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-half-s-line"></i></span>
+    </div>    
+    <div class="dish-content-bottom">
+      <p class="item-price">$22.22</p>            
+    </div>
+  </div>
+</div>
+
+<div class="dish-item">  
+  <img class="item-image"src="./images/recipe-01.jpg" alt="" />
+  <i class="ri-shopping-cart-line add_cart"></i>       
+  <div class="dish-content">
+    <h3 class="item-title">Pepperoni Pizza</h3>
+    <div class="ratings">
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-half-s-line"></i></span>
+    </div>    
+    <div class="dish-content-bottom">
+      <p class="item-price">$25.99</p>      
+    </div>
+  </div>
+</div>
+
+
+<div class="dish-item">  
+  <img class="item-image"src="./images/recipe-01.jpg" alt="" />
+  <i class="ri-shopping-cart-line add_cart"></i>       
+  <div class="dish-content">
+    <h3 class="item-title">Hawaiian Pizza</h3>
+    <div class="ratings">
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-half-s-line"></i></span>
+    </div>    
+    <div class="dish-content-bottom">
+      <p class="item-price">$30.99</p>      
+    </div>
+  </div>
+</div>
+
+<div class="dish-item">  
+  <img class="item-image"src="./images/recipe-01.jpg" alt="" />
+  <i class="ri-shopping-cart-line add_cart"></i>       
+  <div class="dish-content">
+    <h3 class="item-title">BBQ Chicken Pizza</h3>
+    <div class="ratings">
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-half-s-line"></i></span>
+    </div>    
+    <div class="dish-content-bottom">
+      <p class="item-price">$10.99</p>      
+    </div>
+  </div>
+</div>
+
+<div class="dish-item">  
+  <img class="item-image"src="./images/recipe-01.jpg" alt="" />
+  <i class="ri-shopping-cart-line add_cart"></i>       
+  <div class="dish-content">
+    <h3 class="item-title">Veggie Supreme Pizza</h3>
+    <div class="ratings">
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-half-s-line"></i></span>
+    </div>    
+    <div class="dish-content-bottom">
+      <p class="item-price">$20.99</p>      
+    </div>
+  </div>
+</div>
+
+<div class="dish-item">  
+  <img class="item-image"src="./images/recipe-01.jpg" alt="" />
+  <i class="ri-shopping-cart-line add_cart"></i>       
+  <div class="dish-content">
+    <h3 class="item-title">Meat Lovers Pizza</h3>
+    <div class="ratings">
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-s-fill"></i></span>
+      <span><i class="ri-star-half-s-line"></i></span>
+    </div>    
+    <div class="dish-content-bottom">
+      <p class="item-price">$29.99</p>      
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </section>
+      <!-- popular dishes section end -->
+      
+      <!-- about us section start -->    
+      <section class="about section" id="about">
+        <div class="image">
+            <img src="images/burger.png" alt="">
+        </div>
+    
+        <div class="content">
+          <h1 class="heading"> <span>about us</span> </h1>
+            <h3 class="title">Every Day Is A Chance to Taste Delicious Pizza</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quia accusamus dicta inventore nobis obcaecati vero odio, id dolorum. Consequatur ex, aperiam deserunt nostrum perferendis illum unde ipsa? Consequatur, distinctio?</p>
+            <div class="box-container">
+                <div class="box">
+                    <h3><i class="fas fa-check"></i>Happiness</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+                </div>
+                <div class="box">
+                    <h3><i class="fas fa-check"></i>healthy life</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+                </div>
+                <div class="box">
+                    <h3><i class="fas fa-check"></i>Energy</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+                </div>
+                <div class="box">
+                    <h3><i class="fas fa-check"></i>deliocious</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+                </div>
+            </div>            
+        </div>
+    </section>
+      <!-- about us section end -->
+
+      <!-- offer section start -->
+      <section class="banner section">
+        <span>Order now</span>
+        <h3>get upto 50% discount</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat architecto nesciunt aut sapiente quis inventore quam vitae quod illum incidunt.</p>
+        <a href="#" class="btn">get discount</a>
+    </section>
+      <!-- offer section end -->
+
+      <!-- clients start -->
+      <div class="review"id="clients">        
+          <div class="information">
+              <span>testimonials</span>
+              <h3>what our clients says</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas praesentium asperiores fugiat, excepturi odit obcaecati a voluptatibus earum quisquam?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas praesentium asperiores fugiat, excepturi odit obcaecati a voluptatibus earum quisquam?
+              </p>
+              <a href="#" class="btn">read more</a>
+          </div>
+          <div class="swiper review-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                  <div class="image">
+                      <img src="images/pic-1.jpg" alt="">
+                  </div>
+                  <div class="content">
+                      <div class="link"> <a href="#">by user</a> <span>|</span> <a href="#">21st may, 2023</a> </div>
+                      <h3>Karthi keyan</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
+                      <a href="#" class="btn">read more</a>
+                  </div>
+              </div>
+      
+              <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/pic-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="link"> <a href="#">by user</a> <span>|</span> <a href="#">21st may, 2023</a> </div>
+                    <h3>Karthi keyan</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+      
+            <div class="swiper-slide slide">
+              <div class="image">
+                  <img src="images/pic-3.jpg" alt="">
+              </div>
+              <div class="content">
+                  <div class="link"> <a href="#">by user</a> <span>|</span> <a href="#">21st may, 2023</a> </div>
+                  <h3>Karthi keyan</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
+                  <a href="#" class="btn">read more</a>
+              </div>
+          </div>
+      
+          <div class="swiper-slide slide">
+            <div class="image">
+                <img src="images/pic-4.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="link"> <a href="#">by user</a> <span>|</span> <a href="#">21st may, 2023</a> </div>
+                <h3>Karthi keyan</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+              </div>
+          </div>      
+      </div>
+      <!-- clients end -->
+
+      <!-- =========== footer start ============ -->
+      <div class="footer " id="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a class="links" href="#home">home</a>
+                <a class="links" href="#menu">Menu</a>
+                <a class="links" href="#about">About</a>
+                <a class="links" href="#clients">clients</a>                
+                <a class="links" href="#contact">contact us</a>
+            </div>
+    
+            <div class="box">
+                <h3>opening hours</h3>
+                <p> monday : <i> 7:00am - 10:30pm </i> </p>
+                <p> tuesday : <i> 7:00am - 10:30pm </i> </p>
+                <p> wednesday : <i> 7:00am - 10:30pm </i> </p>
+                <p> friday : <i> 7:00am - 10:30pm </i> </p>
+                <p> saturday : <i> 7:00am - 10:30pm </i> </p>
+                <p> sunday : <i> closed </i> </p>
+            </div>
+    
+            <div class="box">
+                <h3>opening hours</h3>
+                <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+                <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
+                <p> <i class="fas fa-envelope"></i> skarthikeyan25052001@gmail.com </p>
+                <p> <i class="fas fa-map"></i> TamilNadu, india - 637502 </p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <form action="">
+                    <input type="email" name="" class="email" placeholder="enter your email" id="">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
+            </div>
+        </div>
+      </div>
+    <div class="credit"> created by <span>mr. Karthick </span> | all rights reserved! </div>
+    
+    <!-- =========== footer end ============ -->
+
+    </main>
+    <!-- =========== main end ============ -->
+
+
+
+
+
+    
+
+    
+
+    <!-- main js file -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+      
+    </script>
+  </body>
+</html>
